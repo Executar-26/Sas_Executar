@@ -1,0 +1,12 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "echo \"apps/web: no Next.js app yet — pending Fase 0/1\"",
+    "build": "echo \"apps/web: no Next.js app yet — pending Fase 0/1\"",
+    "lint": "echo \"apps/web: no Next.js app yet — pending Fase 0/1\"",
+    "test": "echo \"apps/web: no Next.js app yet — pending Fase 0/1\"",
+    "typecheck": "echo \"apps/web: no Next.js app yet — pending Fase 0/1\""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@sas-executar/scanner-web",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "echo \"@sas-executar/scanner-web: no build step yet — pending Fase 4 port\"",
+    "lint": "echo \"@sas-executar/scanner-web: pending Fase 4 port\"",
+    "test": "echo \"@sas-executar/scanner-web: pending Fase 4 port\"",
+    "typecheck": "echo \"@sas-executar/scanner-web: pending Fase 4 port\""
+  }
+}

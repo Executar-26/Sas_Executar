@@ -1,0 +1,12 @@
+{
+  "name": "mobile",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "echo \"apps/mobile: no Expo app yet — pending Fase 6\"",
+    "build": "echo \"apps/mobile: no Expo app yet — pending Fase 6\"",
+    "lint": "echo \"apps/mobile: no Expo app yet — pending Fase 6\"",
+    "test": "echo \"apps/mobile: no Expo app yet — pending Fase 6\"",
+    "typecheck": "echo \"apps/mobile: no Expo app yet — pending Fase 6\""
+  }
+}

@@ -1,0 +1,47 @@
+name: CI
+
+# Roda em todo push/PR, sem filtro de path — decisão deliberada (docs/PLAN.md §5 Fase 0), em
+# resposta direta ao achado da auditoria do AppScanner de que um filtro de path estreito deixava
+# superfícies inteiras (auth, rate limit, camada de UI) sem cobertura de CI. Estreitar depois só
+# com evidência real de que algum job está caro demais para rodar sempre.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gates:
+    name: install, typecheck, lint, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Lint
+        run: pnpm lint
+
+      - name: Test
+        run: pnpm test
+
+      - name: Build
+        run: pnpm build

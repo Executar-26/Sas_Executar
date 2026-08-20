@@ -1,0 +1,13 @@
+{
+  "name": "@sas-executar/mcp-runtime",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "echo \"@sas-executar/mcp-runtime: no build step yet — pending Fase 2/3 port\"",
+    "lint": "echo \"@sas-executar/mcp-runtime: pending Fase 2/3 port\"",
+    "test": "echo \"@sas-executar/mcp-runtime: pending Fase 2/3 port\"",
+    "typecheck": "echo \"@sas-executar/mcp-runtime: pending Fase 2/3 port\""
+  }
+}

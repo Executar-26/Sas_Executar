@@ -1,0 +1,13 @@
+{
+  "name": "@sas-executar/scanner-core",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "echo \"@sas-executar/scanner-core: no build step yet — pending Fase 2 port\"",
+    "lint": "echo \"@sas-executar/scanner-core: pending Fase 2 port\"",
+    "test": "echo \"@sas-executar/scanner-core: pending Fase 2 port\"",
+    "typecheck": "echo \"@sas-executar/scanner-core: pending Fase 2 port\""
+  }
+}
