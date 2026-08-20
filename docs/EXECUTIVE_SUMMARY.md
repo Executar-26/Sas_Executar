@@ -81,9 +81,22 @@ que só dados reais pós-lançamento vão calibrar. Isso não é responsabilidad
 informa por que a Fase 1 do plano (identidade durável, upgrade anônimo→registrado) importa: sem
 conta persistente, não existe cohort para medir retenção nenhuma.
 
+**DATA-ADHD-PM-001** mapeou 11 funções de gestão de projetos (`GP-01` Iniciação/escopo a `GP-11`
+Capacidade/forecasting) contra literatura clínica real (NIMH, PubMed, PMBOK® Guide 8, NICE NG87),
+com classe de evidência explícita por função — nunca `A` (observado no EXECUTAR), sempre `B`/`C`
+(associação clínica geral publicada) para a vulnerabilidade, e `E · Inferido` para qualquer
+conclusão de design. A tese sustentada: gestão de projetos convencional exige planejamento,
+memória prospectiva, atenção sustentada, gestão de tempo e autocontrole — domínios em que TDAH
+pode, heterogeneamente, gerar atrito —, e uma arquitetura que externalize essas operações *pode*
+reduzir essa fricção, sem que isso já esteja validado empiricamente para o EXECUTAR. Usei essa
+matriz para preencher as colunas clínicas de [`docs/product/`](./product/README.md): 62 das 100
+linhas de feature/requisito mapeiam a alguma função `GP-0X`; 38 são infraestrutura sem correlação
+direta e foram marcadas como tal, sem forçar uma ligação que a pesquisa não sustenta.
+
 ## Síntese para o próximo agente
 
-As três frentes não competem por prioridade — elas resolvem camadas diferentes do mesmo problema.
+As três frentes (infraestrutura, matriz de produto, pesquisas de mercado/clínica) não competem
+por prioridade — elas resolvem camadas diferentes do mesmo problema.
 A ordem tecnicamente correta, sem otimismo: (1) fechar a Fase 0-1 de `Sas_Executar` (CI real,
 identidade durável, RLS multiusuário) porque é pré-requisito estrutural tanto para o SaaS quanto
 para qualquer feature de colaboração do AppScanner; (2) avançar os 46 itens P0 da matriz de produto
