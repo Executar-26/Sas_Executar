@@ -22,9 +22,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Sem `version:` aqui de propósito — a action lê a versão do campo
+      # `packageManager` do package.json raiz (pnpm@9.15.0). Especificar os dois
+      # é erro fatal da action ("Multiple versions of pnpm specified"), não só
+      # redundância.
       - uses: pnpm/action-setup@v4
-        with:
-          version: 9
 
       - uses: actions/setup-node@v4
         with:
