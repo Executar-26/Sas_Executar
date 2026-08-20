@@ -1,13 +1,43 @@
+# Dependências / gerenciador de pacote
 node_modules/
+.pnpm-store/
+
+# Build/cache — Turborepo, Next.js, bundlers genéricos
 .turbo/
 .next/
 dist/
 build/
+*.tsbuildinfo
+coverage/
+
+# Expo / React Native (apps/mobile)
+# `ios/` e `android/` são gerados por `expo prebuild`/EAS Build (managed workflow, ver
+# docs/PLAN.md §5 Fase 6) — não versionar; se o projeto migrar para bare workflow no futuro,
+# remova estas duas linhas deliberadamente, não por acidente.
 .expo/
+.expo-shared/
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+.eas/
+
+# Ambiente / segredos — nunca commitar valor real, só os *.example versionados
 .env
 .env.local
 .env*.local
+!.env.example
+!apps/web/.env.example
+!apps/mobile/.env.example
+
+# Supabase CLI (estado local, não o schema versionado em supabase/migrations)
+supabase/.branches
+supabase/.temp
+
+# Diversos
 *.log
 .DS_Store
 .vercel/
-coverage/
