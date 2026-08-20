@@ -1,0 +1,8 @@
+{
+  "name": "@sas-executar/config",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "echo \"@sas-executar/config: no build step (config-only package)\""
+  }
+}

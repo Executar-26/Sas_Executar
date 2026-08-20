@@ -1,0 +1,13 @@
+{
+  "name": "@sas-executar/fractal",
+  "private": true,
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "echo \"@sas-executar/fractal: no build step yet — pending Fase 2 port\"",
+    "lint": "echo \"@sas-executar/fractal: pending Fase 2 port\"",
+    "test": "echo \"@sas-executar/fractal: pending Fase 2 port\"",
+    "typecheck": "echo \"@sas-executar/fractal: pending Fase 2 port\""
+  }
+}
